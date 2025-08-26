@@ -6,6 +6,8 @@ import torchvision.transforms as T
 import os
 from tqdm import tqdm
 
+my_data = "./generateShapes/dataset_straight_centered/dataset_straight_centered_filled2500"
+
 
 # --- Custom Dataset ---
 class ShapesDataset(Dataset):
@@ -24,17 +26,17 @@ class ShapesDataset(Dataset):
         return len(self.paths)
 
     def __getitem__(self, idx):
-        image = Image.open(self.paths[idx]).convert("RGB")
+        image = Image.open(self.paths[idx]).convert("L")
         return self.transform(image)
 
 
 # --- UNet Model ---
 model = UNet2DModel(
     sample_size=64,
-    in_channels=3,
-    out_channels=3,
+    in_channels=1,
+    out_channels=1,
     layers_per_block=2,
-    block_out_channels=(64, 128, 128),
+    block_out_channels=(64, 128),
     down_block_types=("DownBlock2D", "DownBlock2D"),
     up_block_types=("UpBlock2D", "UpBlock2D"),
 )
@@ -42,11 +44,13 @@ model = UNet2DModel(
 noise_scheduler = DDPMScheduler(num_train_timesteps=1000)
 
 # --- Training Loop ---
-dataset = ShapesDataset("/path/to/your/data")
+dataset = ShapesDataset(my_data)
 dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
-device = "cuda" if torch.cuda.is_available() else "cpu"
+
+device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+print("Using device:", device)
 model.to(device)
 
 for epoch in range(20):

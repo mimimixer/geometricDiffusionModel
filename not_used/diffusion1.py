@@ -12,6 +12,9 @@ from torch.utils.data import DataLoader
 from pathlib import Path
 from tqdm import tqdm
 
+
+my_data = "../generateShapes/dataset_straight_centered/dataset_straight_centered_filled/"
+
 # ----------------------------
 # 1. Parameters
 # ----------------------------
@@ -32,7 +35,7 @@ data_transform = T.Compose([
     T.Lambda(lambda t: (t * 2) - 1)  # scale to [-1, 1]
 ])
 
-dataset = dsets.ImageFolder(root='dataset', transform=data_transform)
+dataset = dsets.ImageFolder(root='my_data', transform=data_transform)
 dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
 # ----------------------------
@@ -95,7 +98,8 @@ class SimpleUNet(nn.Module):
 # ----------------------------
 # 5. Training Loop
 # ----------------------------
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#device = torch.device("cuda" if torch.cuda.is_available() else "cpu"
+device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 model = SimpleUNet().to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 

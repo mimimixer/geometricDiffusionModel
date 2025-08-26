@@ -70,4 +70,4 @@ for i in range(TIMESTEPS):
     plt.imshow(noisy_image, cmap = 'gray')
 
 plt.show()
-plt.imsave('output_11.png', tensor, cmap = 'gray')
+plt.imsave('output_11.png', tensor, cmap ='gray')
