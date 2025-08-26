@@ -5,21 +5,21 @@ from pathlib import Path #to create system-idependent paths
 from random import randint, choice, seed
 from scipy.ndimage import rotate
 from scipy import ndimage
-from skimage.draw import ellipse
+
 
 #seed(42) #number for random generator to start with for generation. Default: sys-time
 
-output_folder_name = ("dataset_outlined_rotated1")
+output_folder_name = ("dataset_rotated_cropped/dataset_rotated_cropped_filled2500")
 
 # Configuration
 output_dir = Path(output_folder_name)  #pathlib.Path instantiates either PosixPath or WindowsPath
 img_size = 64
-num_images_per_class = 500
+num_images_per_class = 2500
 polygon_number_of_vertices = 5
-shape_classes = ["circle", "ellipse", "triangle", "rectangle", "square"]#, "polygon"] #"kite"]
+shape_classes = ["1triangle", "2rectangle", "3square", "4circle", "5ellipse"]#, "polygon"] #"kite"]
 
-thickness = 1
-#thickness = -1
+#thickness = 1
+thickness = -1
 # color = (0, 1, 0) #BGR
 # color = (randint(0, 255), randint(0, 255), randint(0, 255))
 #color = "random"
@@ -38,15 +38,15 @@ def create_blank_image():
 def draw_circle(img, thickness, color):
     color = color_function(color)
     radius = randint(2, int(img_size//2-1)) #returns number between a and b
-    center = (randint(radius, img_size - radius), randint(radius, img_size - radius))
+    center = (randint(radius, img_size - radius), randint(radius, img_size - radius)) #(img_size//2, img_size//2)
     cv2.circle(img, center, radius, color, thickness) #b+w, filled - thickness=-1 fills the circle
     #cv2.circle(img, center, radius, color, thickness) #b+w, outlined
     #cv2.circle(img, center, radius, color, thickness) #colored, filled
 
 def draw_ellipse(img, thickness, color):
     color = color_function(color)
-    axes_width = randint(4, int(img_size//2-1)) #returns number between a and b
-    center = (randint(axes_width, img_size - axes_width), randint(axes_width, img_size - axes_width))
+    axes_width = randint(4, img_size//2-1) #returns number between a and b
+    center = (randint(axes_width, img_size - axes_width), randint(axes_width, img_size - axes_width)) #(img_size//2, img_size//2)
     angle = randint(0, 180)
     axes_height = randint(2, axes_width-1)
     cv2.ellipse(img, center, [axes_width, axes_height], angle, 0, 360, color, thickness) #b+w, filled
@@ -57,9 +57,10 @@ def draw_rectangle(img, thickness, color):
     color = color_function(color)
     rectangle_height = randint(2, int(img_size//(2**.5)-1))
     rectangle_width = randint(2, int(img_size//(2**.5)-1))
-    rotation_angle = randint(0, 360)
+    rotation_angle = randint(0, 180)
     image_mask = np.zeros_like(img)
-    x1, y1 = randint(0, img_size-rectangle_width), randint(0, img_size-rectangle_height)
+    #x1, y1 = randint(0, img_size-rectangle_width), randint(0, img_size-rectangle_height)
+    x1, y1 = img_size//2-rectangle_width//2, img_size//2-rectangle_height//2
     pts = np.array([
         [x1, y1],
         [x1, y1 + rectangle_height],
@@ -82,9 +83,10 @@ def draw_rectangle(img, thickness, color):
 def draw_square(img, thickness, color):
     color = color_function(color)
     size = randint(2, int(img_size//(2**.5)-1))
-    rotation_angle = randint(0, 360)
+    rotation_angle = randint(0, 180)
     image_mask = np.zeros_like(img)
-    x1, y1 = randint(0, img_size - size), randint(0, img_size - size)
+    x1, y1 = img_size // 2 - size // 2, img_size // 2 - size // 2
+    #x1, y1 = randint(0, img_size - size), randint(0, img_size - size)
     pts = np.array([
         [x1, y1],
         [x1, y1 + size],
@@ -173,11 +175,11 @@ def draw_kite(img, color = (0, 1, 0), thickness):
 
 # Shape drawing map/dictionary: key = name of shape, value = shape-creating function
 draw_funcs = {
-    "circle": draw_circle,
-    "ellipse": draw_ellipse,
-    "triangle": draw_triangle,
-    "rectangle": draw_rectangle,
-    "square": draw_square
+    "1triangle": draw_triangle,
+    "2rectangle": draw_rectangle,
+    "3square": draw_square,
+    "4circle": draw_circle,
+    "5ellipse": draw_ellipse,
     #"polygon": draw_polygon
     #"kite": draw_kite
 }

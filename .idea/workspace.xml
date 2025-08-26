@@ -5,15 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b5c15d9-cf40-438f-89c3-863da6cefb6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/geoDiff1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generateShapes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generateShapes/generateGeometricShapes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GAN2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GANs/GAN1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/pca-shape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAE/VAEvisualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAE/fcVAEmodel.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAEdataloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAEgenerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAEmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VAEtrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnnVAEgenerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnnVAEmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnnVAEtrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diffusion5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/TutorialAvishekBiswasAVB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/TutorialGenerativeDeepLearningBook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/diffusion-Unet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/diffusion3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/inferenz3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/not_used/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualizeVAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/geoDiff1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/geoDiff1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diffusion1.py" beforeDir="false" afterPath="$PROJECT_DIR$/not_used/diffusion1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diffusion2.py" beforeDir="false" afterPath="$PROJECT_DIR$/not_used/diffusion2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diffusion2a.py" beforeDir="false" afterPath="$PROJECT_DIR$/not_used/diffusion2a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateShapes/generateGeometricShapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateShapes/generateGeometricShapes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Stub" />
         <option value="Python Script" />
       </list>
     </option>
@@ -41,6 +59,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mimimixer&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mimimixer/geometricDiffusionModel&quot;,
+    &quot;accountId&quot;: &quot;c8c74050-b81c-49a1-ac24-52edf6619841&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -52,19 +82,52 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.GAN1.executor": "Run",
+    "Python.GAN2.executor": "Run",
+    "Python.VAEgenerator.executor": "Run",
+    "Python.VAEmodel.executor": "Run",
+    "Python.VAEtrain.executor": "Run",
+    "Python.VAEvisualize.executor": "Run",
     "Python.__init__.executor": "Run",
+    "Python.cnnVAEgenerator.executor": "Run",
+    "Python.cnnVAEmodel.executor": "Run",
+    "Python.cnnVAEtrain.executor": "Run",
+    "Python.diffusion-Unet.executor": "Run",
+    "Python.diffusion2.executor": "Run",
+    "Python.diffusion2a.executor": "Run",
+    "Python.diffusion3.executor": "Run",
     "Python.generateGeometricShapes.executor": "Run",
+    "Python.generatorVAE.executor": "Run",
+    "Python.inferenz3.executor": "Run",
+    "Python.pca-shape.executor": "Run",
+    "Python.pca.executor": "Run",
+    "Python.visualizeVAE.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "diff-first",
+    "last_opened_file_path": "/Users/sunny/Documents/aiai2/geoDiff1/not_used",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/not_used" />
+      <recent name="$PROJECT_DIR$/VAE" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/not_used" />
+      <recent name="$PROJECT_DIR$/GANs/new" />
+      <recent name="$PROJECT_DIR$/GANs/trainedGans" />
+      <recent name="$PROJECT_DIR$/VAE/friday" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,14 +147,75 @@
       <workItem from="1751553474876" duration="811000" />
       <workItem from="1751554291558" duration="1133000" />
       <workItem from="1751617637885" duration="1108000" />
+      <workItem from="1753631623134" duration="37950000" />
+      <workItem from="1754498030205" duration="51439000" />
+      <workItem from="1754912848313" duration="51822000" />
+      <workItem from="1755114596217" duration="15438000" />
+      <workItem from="1755417252733" duration="268000" />
+      <workItem from="1755417525929" duration="492000" />
+      <workItem from="1755418026648" duration="115043000" />
+      <workItem from="1755986482947" duration="6903000" />
+      <workItem from="1756193671400" duration="563000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/not_used/diffusion2.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/not_used/__init__.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/not_used/diffusion3.py</url>
+          <line>153</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/VAEgenerator.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/geoDiff1$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1751554441858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generateShapes" />
-    <SUITE FILE_PATH="coverage/geoDiff1$generateGeometricShapes.coverage" NAME="generateGeometricShapes Coverage Results" MODIFIED="1751554260791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generateShapes" />
+    <SUITE FILE_PATH="coverage/geoDiff1$diffusion2a.coverage" NAME="diffusion2a Coverage Results" MODIFIED="1753639450046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$visualizeVAE.coverage" NAME="visualizeVAE Coverage Results" MODIFIED="1755819210333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$diffusion_Unet.coverage" NAME="diffusion-Unet Coverage Results" MODIFIED="1755990312483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$VAEtrain.coverage" NAME="VAEtrain Coverage Results" MODIFIED="1755085833651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$generatorVAE.coverage" NAME="generatorVAE Coverage Results" MODIFIED="1754500032238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$cnnVAEtrain.coverage" NAME="cnnVAEtrain Coverage Results" MODIFIED="1755967907088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$diffusion2.coverage" NAME="diffusion2 Coverage Results" MODIFIED="1755675648085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$cnnVAEmodel.coverage" NAME="cnnVAEmodel Coverage Results" MODIFIED="1755817640431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1754511671624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$GAN1.coverage" NAME="GAN1 Coverage Results" MODIFIED="1755426558559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GANs" />
+    <SUITE FILE_PATH="coverage/geoDiff1$VAEmodel.coverage" NAME="VAEmodel Coverage Results" MODIFIED="1754818458921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$VAEgenerator.coverage" NAME="VAEgenerator Coverage Results" MODIFIED="1755770157372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$generateGeometricShapes.coverage" NAME="generateGeometricShapes Coverage Results" MODIFIED="1755963258513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generateShapes" />
+    <SUITE FILE_PATH="coverage/geoDiff1$GAN2.coverage" NAME="GAN2 Coverage Results" MODIFIED="1756016638946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GANs" />
+    <SUITE FILE_PATH="coverage/geoDiff1$diffusion3.coverage" NAME="diffusion3 Coverage Results" MODIFIED="1755988766758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geoDiff1$VAEvisualize.coverage" NAME="VAEvisualize Coverage Results" MODIFIED="1755789776213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$inferenz3.coverage" NAME="inferenz3 Coverage Results" MODIFIED="1755521157907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/diffusion3" />
+    <SUITE FILE_PATH="coverage/geoDiff1$pca_shape.coverage" NAME="pca-shape Coverage Results" MODIFIED="1755947623880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PCA" />
+    <SUITE FILE_PATH="coverage/geoDiff1$cnnVAEgenerator.coverage" NAME="cnnVAEgenerator Coverage Results" MODIFIED="1755955901902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VAE" />
+    <SUITE FILE_PATH="coverage/geoDiff1$pca.coverage" NAME="pca Coverage Results" MODIFIED="1755934121462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
