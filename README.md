@@ -1,5 +1,5 @@
 # Generating geometrical shapes with AI models
-### Exploring the latent Space of VAE, GAN and Diffusion models
+### Exploring the latent space of VAE, GAN and Diffusion models
 
 * create your dataset with: generateGeometricShapes.py
 
